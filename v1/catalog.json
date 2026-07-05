@@ -1,0 +1,416 @@
+{
+  "version": 1,
+  "templates": [
+    {
+      "id": "cn-national-id",
+      "category": "nationalID",
+      "displayName": "居民身份证",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "公民身份号码", "kind": "number" },
+        { "label": "签发机关", "kind": "issuedBy" },
+        { "label": "有效期限", "kind": "expiry" }
+      ]
+    },
+    {
+      "id": "cn-temp-national-id",
+      "category": "nationalID",
+      "displayName": "临时居民身份证",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "公民身份号码", "kind": "number" },
+        { "label": "签发机关", "kind": "issuedBy" },
+        { "label": "有效期限", "kind": "expiry" }
+      ]
+    },
+    {
+      "id": "cn-household-register",
+      "category": "civilRecord",
+      "displayName": "居民户口簿",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "户主姓名", "kind": "name" },
+        { "label": "户号", "kind": "number" },
+        { "label": "户籍地址", "kind": "issuedLocation" },
+        { "label": "签发机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-passport",
+      "category": "passport",
+      "displayName": "中国护照",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "护照号码", "kind": "number" },
+        { "label": "签发日期", "kind": "issueDate" },
+        { "label": "有效期至", "kind": "expiry" },
+        { "label": "签发地点", "kind": "issuedLocation" },
+        { "label": "签发机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-hk-macau-permit",
+      "category": "travelPermit",
+      "displayName": "往来港澳通行证",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "证件号码", "kind": "number" },
+        { "label": "签发日期", "kind": "issueDate" },
+        { "label": "有效期至", "kind": "expiry" },
+        { "label": "签发地点", "kind": "issuedLocation" }
+      ]
+    },
+    {
+      "id": "cn-taiwan-permit",
+      "category": "travelPermit",
+      "displayName": "大陆居民往来台湾通行证",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "证件号码", "kind": "number" },
+        { "label": "签发日期", "kind": "issueDate" },
+        { "label": "有效期至", "kind": "expiry" },
+        { "label": "签发地点", "kind": "issuedLocation" }
+      ]
+    },
+    {
+      "id": "cn-exit-entry-permit",
+      "category": "travelPermit",
+      "displayName": "中华人民共和国出入境通行证",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "证件号码", "kind": "number" },
+        { "label": "签发日期", "kind": "issueDate" },
+        { "label": "有效期至", "kind": "expiry" },
+        { "label": "签发机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-drivers-license",
+      "category": "driversLicense",
+      "displayName": "机动车驾驶证",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "证号", "kind": "number" },
+        { "label": "初次领证日期", "kind": "issueDate" },
+        { "label": "有效期限", "kind": "expiry" },
+        { "label": "准驾车型", "kind": "text" },
+        { "label": "发证机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-vehicle-license",
+      "category": "vehicle",
+      "displayName": "机动车行驶证",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "所有人", "kind": "name" },
+        { "label": "号牌号码", "kind": "number" },
+        { "label": "车辆识别代号", "kind": "text" },
+        { "label": "注册日期", "kind": "issueDate" },
+        { "label": "检验有效期至", "kind": "expiry" },
+        { "label": "发证机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-vehicle-registration",
+      "category": "vehicle",
+      "displayName": "机动车登记证书",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "机动车所有人", "kind": "name" },
+        { "label": "车辆识别代号", "kind": "number" },
+        { "label": "品牌型号", "kind": "text" },
+        { "label": "登记日期", "kind": "issueDate" },
+        { "label": "登记机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-residence-permit",
+      "category": "residencePermit",
+      "displayName": "居住证",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "证件号码", "kind": "number" },
+        { "label": "签发日期", "kind": "issueDate" },
+        { "label": "有效期至", "kind": "expiry" },
+        { "label": "签发机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-hk-mo-tw-residence-permit",
+      "category": "residencePermit",
+      "displayName": "港澳台居民居住证",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "公民身份号码", "kind": "number" },
+        { "label": "签发日期", "kind": "issueDate" },
+        { "label": "有效期限", "kind": "expiry" },
+        { "label": "签发机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-social-insurance",
+      "category": "healthInsurance",
+      "displayName": "社会保障卡",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "社会保障号码", "kind": "number" },
+        { "label": "发卡日期", "kind": "issueDate" }
+      ]
+    },
+    {
+      "id": "cn-marriage-certificate",
+      "category": "civilRecord",
+      "displayName": "结婚证",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "结婚证字号", "kind": "number" },
+        { "label": "登记日期", "kind": "issueDate" },
+        { "label": "登记机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-birth-certificate",
+      "category": "civilRecord",
+      "displayName": "出生医学证明",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "编号", "kind": "number" },
+        { "label": "出生日期", "kind": "text" },
+        { "label": "签发机构", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-property-certificate",
+      "category": "civilRecord",
+      "displayName": "不动产权证书",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "权利人", "kind": "name" },
+        { "label": "不动产单元号", "kind": "number" },
+        { "label": "坐落", "kind": "issuedLocation" },
+        { "label": "登记日期", "kind": "issueDate" },
+        { "label": "发证机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-graduation-certificate",
+      "category": "civilRecord",
+      "displayName": "毕业证书",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "证书编号", "kind": "number" },
+        { "label": "毕业院校", "kind": "issuedBy" },
+        { "label": "毕业日期", "kind": "issueDate" }
+      ]
+    },
+    {
+      "id": "cn-degree-certificate",
+      "category": "civilRecord",
+      "displayName": "学位证书",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "证书编号", "kind": "number" },
+        { "label": "授予单位", "kind": "issuedBy" },
+        { "label": "授予日期", "kind": "issueDate" }
+      ]
+    },
+    {
+      "id": "cn-teacher-license",
+      "category": "professionalLicense",
+      "displayName": "教师资格证",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "证书号码", "kind": "number" },
+        { "label": "任教学科", "kind": "text" },
+        { "label": "认定机构", "kind": "issuedBy" },
+        { "label": "发证日期", "kind": "issueDate" }
+      ]
+    },
+    {
+      "id": "cn-physician-license",
+      "category": "professionalLicense",
+      "displayName": "医师执业证书",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "证书编码", "kind": "number" },
+        { "label": "执业类别", "kind": "text" },
+        { "label": "执业地点", "kind": "issuedLocation" },
+        { "label": "发证机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-nurse-license",
+      "category": "professionalLicense",
+      "displayName": "护士执业证书",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "证书编号", "kind": "number" },
+        { "label": "执业地点", "kind": "issuedLocation" },
+        { "label": "有效期至", "kind": "expiry" },
+        { "label": "发证机关", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "cn-bank-card",
+      "category": "financial",
+      "displayName": "银行卡",
+      "issuingCountry": "CN",
+      "icon": null,
+      "regions": ["CN"],
+      "fields": [
+        { "label": "持卡人", "kind": "name" },
+        { "label": "卡号", "kind": "number" },
+        { "label": "有效期至", "kind": "expiry" },
+        { "label": "发卡银行", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "hk-id",
+      "category": "nationalID",
+      "displayName": "香港身份證",
+      "issuingCountry": "HK",
+      "icon": null,
+      "regions": ["HK"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "身份證號碼", "kind": "number" },
+        { "label": "簽發日期", "kind": "issueDate" }
+      ]
+    },
+    {
+      "id": "tw-id",
+      "category": "nationalID",
+      "displayName": "中華民國國民身分證",
+      "issuingCountry": "TW",
+      "icon": null,
+      "regions": ["TW"],
+      "fields": [
+        { "label": "姓名", "kind": "name" },
+        { "label": "統一編號", "kind": "number" },
+        { "label": "發證日期", "kind": "issueDate" }
+      ]
+    },
+    {
+      "id": "ww-passport",
+      "category": "passport",
+      "displayName": "Passport",
+      "issuingCountry": null,
+      "icon": null,
+      "regions": null,
+      "fields": [
+        { "label": "Full Name", "kind": "name" },
+        { "label": "Passport No.", "kind": "number" },
+        { "label": "Date of Issue", "kind": "issueDate" },
+        { "label": "Date of Expiry", "kind": "expiry" },
+        { "label": "Place of Issue", "kind": "issuedLocation" },
+        { "label": "Authority", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "ww-visa",
+      "category": "visa",
+      "displayName": "Visa",
+      "issuingCountry": null,
+      "icon": null,
+      "regions": null,
+      "fields": [
+        { "label": "Full Name", "kind": "name" },
+        { "label": "Visa Number", "kind": "number" },
+        { "label": "Valid From", "kind": "issueDate" },
+        { "label": "Valid Until", "kind": "expiry" },
+        { "label": "Visa Type", "kind": "text" }
+      ]
+    },
+    {
+      "id": "ww-drivers-license",
+      "category": "driversLicense",
+      "displayName": "Driver's License",
+      "issuingCountry": null,
+      "icon": null,
+      "regions": null,
+      "fields": [
+        { "label": "Full Name", "kind": "name" },
+        { "label": "License No.", "kind": "number" },
+        { "label": "Issue Date", "kind": "issueDate" },
+        { "label": "Expiry Date", "kind": "expiry" },
+        { "label": "Class", "kind": "text" },
+        { "label": "Issuing Authority", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "ww-residence-permit",
+      "category": "residencePermit",
+      "displayName": "Residence Permit",
+      "issuingCountry": null,
+      "icon": null,
+      "regions": null,
+      "fields": [
+        { "label": "Full Name", "kind": "name" },
+        { "label": "Permit No.", "kind": "number" },
+        { "label": "Issue Date", "kind": "issueDate" },
+        { "label": "Expiry Date", "kind": "expiry" },
+        { "label": "Issuing Authority", "kind": "issuedBy" }
+      ]
+    }
+  ]
+}
