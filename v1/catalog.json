@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "templates": [
     {
       "id": "cn-national-id",
@@ -520,6 +520,1303 @@
         { "label": "Issue Date", "kind": "issueDate" },
         { "label": "Expiry Date", "kind": "expiry" },
         { "label": "Issuing Authority", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "us-passport",
+      "category": "passport",
+      "displayName": "United States Passport",
+      "issuingCountry": "US",
+      "icon": null,
+      "regions": ["US"],
+      "fields": [
+        { "label": "Full Name", "kind": "name" },
+        { "label": "Passport No.", "kind": "number" },
+        { "label": "Date of Issue", "kind": "issueDate" },
+        { "label": "Date of Expiration", "kind": "expiry" },
+        { "label": "Authority", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "us-drivers-license",
+      "category": "driversLicense",
+      "displayName": "Driver License",
+      "issuingCountry": "US",
+      "icon": null,
+      "regions": ["US"],
+      "fields": [
+        { "label": "Full Name", "kind": "name" },
+        { "label": "License Number", "kind": "number" },
+        { "label": "Date of Birth", "kind": "text" },
+        { "label": "Issue Date", "kind": "issueDate" },
+        { "label": "Expiration Date", "kind": "expiry" },
+        { "label": "Issuing State", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "us-state-id",
+      "category": "nationalID",
+      "displayName": "State ID Card",
+      "issuingCountry": "US",
+      "icon": null,
+      "regions": ["US"],
+      "fields": [
+        { "label": "Full Name", "kind": "name" },
+        { "label": "ID Number", "kind": "number" },
+        { "label": "Date of Birth", "kind": "text" },
+        { "label": "Expiration Date", "kind": "expiry" },
+        { "label": "Issuing State", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "us-ssn",
+      "category": "financial",
+      "displayName": "Social Security Card",
+      "issuingCountry": "US",
+      "icon": null,
+      "regions": ["US"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Social Security Number", "kind": "number" }
+      ]
+    },
+    {
+      "id": "us-green-card",
+      "category": "residencePermit",
+      "displayName": "Permanent Resident Card",
+      "issuingCountry": "US",
+      "icon": null,
+      "regions": ["US"],
+      "pages": [
+        {
+          "label": "Front",
+          "fields": [
+            { "label": "Name", "kind": "name" },
+            { "label": "USCIS Number", "kind": "number" },
+            { "label": "Category", "kind": "text" },
+            { "label": "Card Expires", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Back",
+          "fields": [
+            { "label": "Resident Since", "kind": "issueDate" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-passport",
+      "category": "passport",
+      "displayName": "United Kingdom Passport",
+      "issuingCountry": "GB",
+      "icon": null,
+      "regions": ["GB"],
+      "fields": [
+        { "label": "Full Name", "kind": "name" },
+        { "label": "Passport No.", "kind": "number" },
+        { "label": "Date of Issue", "kind": "issueDate" },
+        { "label": "Date of Expiry", "kind": "expiry" },
+        { "label": "Authority", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "gb-driving-licence",
+      "category": "driversLicense",
+      "displayName": "Driving Licence",
+      "issuingCountry": "GB",
+      "icon": null,
+      "regions": ["GB"],
+      "pages": [
+        {
+          "label": "Front",
+          "fields": [
+            { "label": "Name", "kind": "name" },
+            { "label": "Licence No.", "kind": "number" },
+            { "label": "Date of Birth", "kind": "text" },
+            { "label": "Valid To", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Back",
+          "fields": [
+            { "label": "Categories", "kind": "text" },
+            { "label": "Issuing Authority", "kind": "issuedBy" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-brp",
+      "category": "residencePermit",
+      "displayName": "Biometric Residence Permit",
+      "issuingCountry": "GB",
+      "icon": null,
+      "regions": ["GB"],
+      "pages": [
+        {
+          "label": "Front",
+          "fields": [
+            { "label": "Name", "kind": "name" },
+            { "label": "BRP Number", "kind": "number" },
+            { "label": "Valid Until", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Back",
+          "fields": [
+            { "label": "Immigration Status", "kind": "text" },
+            { "label": "Date of Issue", "kind": "issueDate" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gb-ni",
+      "category": "financial",
+      "displayName": "National Insurance Number",
+      "issuingCountry": "GB",
+      "icon": null,
+      "regions": ["GB"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "National Insurance No.", "kind": "number" }
+      ]
+    },
+    {
+      "id": "de-reisepass",
+      "category": "passport",
+      "displayName": "Reisepass",
+      "issuingCountry": "DE",
+      "icon": null,
+      "regions": ["DE"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Reisepass-Nr.", "kind": "number" },
+        { "label": "Ausstellungsdatum", "kind": "issueDate" },
+        { "label": "Gültig bis", "kind": "expiry" },
+        { "label": "Behörde", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "de-personalausweis",
+      "category": "nationalID",
+      "displayName": "Personalausweis",
+      "issuingCountry": "DE",
+      "icon": null,
+      "regions": ["DE"],
+      "pages": [
+        {
+          "label": "Vorderseite",
+          "fields": [
+            { "label": "Name", "kind": "name" },
+            { "label": "Ausweisnummer", "kind": "number" },
+            { "label": "Gültig bis", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Rückseite",
+          "fields": [
+            { "label": "Ausstellende Behörde", "kind": "issuedBy" },
+            { "label": "Ausstellungsdatum", "kind": "issueDate" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-fuehrerschein",
+      "category": "driversLicense",
+      "displayName": "Führerschein",
+      "issuingCountry": "DE",
+      "icon": null,
+      "regions": ["DE"],
+      "pages": [
+        {
+          "label": "Vorderseite",
+          "fields": [
+            { "label": "Name", "kind": "name" },
+            { "label": "Führerschein-Nr.", "kind": "number" },
+            { "label": "Ausstellungsdatum", "kind": "issueDate" },
+            { "label": "Gültig bis", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Rückseite",
+          "fields": [
+            { "label": "Klassen", "kind": "text" },
+            { "label": "Behörde", "kind": "issuedBy" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-aufenthaltstitel",
+      "category": "residencePermit",
+      "displayName": "Aufenthaltstitel",
+      "issuingCountry": "DE",
+      "icon": null,
+      "regions": ["DE"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Nummer", "kind": "number" },
+        { "label": "Gültig bis", "kind": "expiry" },
+        { "label": "Behörde", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "de-steuer-id",
+      "category": "financial",
+      "displayName": "Steuerliche Identifikationsnummer",
+      "issuingCountry": "DE",
+      "icon": null,
+      "regions": ["DE"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Steuer-ID", "kind": "number" }
+      ]
+    },
+    {
+      "id": "fr-passeport",
+      "category": "passport",
+      "displayName": "Passeport",
+      "issuingCountry": "FR",
+      "icon": null,
+      "regions": ["FR"],
+      "fields": [
+        { "label": "Nom", "kind": "name" },
+        { "label": "N° de passeport", "kind": "number" },
+        { "label": "Date de délivrance", "kind": "issueDate" },
+        { "label": "Date d'expiration", "kind": "expiry" },
+        { "label": "Autorité", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "fr-cni",
+      "category": "nationalID",
+      "displayName": "Carte nationale d'identité",
+      "issuingCountry": "FR",
+      "icon": null,
+      "regions": ["FR"],
+      "pages": [
+        {
+          "label": "Recto",
+          "fields": [
+            { "label": "Nom", "kind": "name" },
+            { "label": "N° de la carte", "kind": "number" },
+            { "label": "Date d'expiration", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Verso",
+          "fields": [
+            { "label": "Autorité", "kind": "issuedBy" },
+            { "label": "Date de délivrance", "kind": "issueDate" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-permis",
+      "category": "driversLicense",
+      "displayName": "Permis de conduire",
+      "issuingCountry": "FR",
+      "icon": null,
+      "regions": ["FR"],
+      "pages": [
+        {
+          "label": "Recto",
+          "fields": [
+            { "label": "Nom", "kind": "name" },
+            { "label": "N° du permis", "kind": "number" },
+            { "label": "Date de délivrance", "kind": "issueDate" },
+            { "label": "Date d'expiration", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Verso",
+          "fields": [
+            { "label": "Catégories", "kind": "text" },
+            { "label": "Préfecture", "kind": "issuedBy" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fr-titre-sejour",
+      "category": "residencePermit",
+      "displayName": "Titre de séjour",
+      "issuingCountry": "FR",
+      "icon": null,
+      "regions": ["FR"],
+      "fields": [
+        { "label": "Nom", "kind": "name" },
+        { "label": "Numéro", "kind": "number" },
+        { "label": "Date d'expiration", "kind": "expiry" },
+        { "label": "Préfecture", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "fr-carte-vitale",
+      "category": "healthInsurance",
+      "displayName": "Carte Vitale",
+      "issuingCountry": "FR",
+      "icon": null,
+      "regions": ["FR"],
+      "fields": [
+        { "label": "Nom", "kind": "name" },
+        { "label": "N° de sécurité sociale", "kind": "number" }
+      ]
+    },
+    {
+      "id": "it-passaporto",
+      "category": "passport",
+      "displayName": "Passaporto",
+      "issuingCountry": "IT",
+      "icon": null,
+      "regions": ["IT"],
+      "fields": [
+        { "label": "Cognome e Nome", "kind": "name" },
+        { "label": "N. passaporto", "kind": "number" },
+        { "label": "Data di rilascio", "kind": "issueDate" },
+        { "label": "Data di scadenza", "kind": "expiry" },
+        { "label": "Autorità", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "it-carta-identita",
+      "category": "nationalID",
+      "displayName": "Carta d'identità",
+      "issuingCountry": "IT",
+      "icon": null,
+      "regions": ["IT"],
+      "pages": [
+        {
+          "label": "Fronte",
+          "fields": [
+            { "label": "Cognome e Nome", "kind": "name" },
+            { "label": "Numero", "kind": "number" },
+            { "label": "Scadenza", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Retro",
+          "fields": [
+            { "label": "Comune", "kind": "issuedBy" },
+            { "label": "Data di rilascio", "kind": "issueDate" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "it-patente",
+      "category": "driversLicense",
+      "displayName": "Patente di guida",
+      "issuingCountry": "IT",
+      "icon": null,
+      "regions": ["IT"],
+      "pages": [
+        {
+          "label": "Fronte",
+          "fields": [
+            { "label": "Cognome e Nome", "kind": "name" },
+            { "label": "Numero", "kind": "number" },
+            { "label": "Rilascio", "kind": "issueDate" },
+            { "label": "Scadenza", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Retro",
+          "fields": [
+            { "label": "Categorie", "kind": "text" },
+            { "label": "Ente", "kind": "issuedBy" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "it-permesso-soggiorno",
+      "category": "residencePermit",
+      "displayName": "Permesso di soggiorno",
+      "issuingCountry": "IT",
+      "icon": null,
+      "regions": ["IT"],
+      "fields": [
+        { "label": "Cognome e Nome", "kind": "name" },
+        { "label": "Numero", "kind": "number" },
+        { "label": "Scadenza", "kind": "expiry" },
+        { "label": "Questura", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "it-codice-fiscale",
+      "category": "financial",
+      "displayName": "Tessera Codice Fiscale",
+      "issuingCountry": "IT",
+      "icon": null,
+      "regions": ["IT"],
+      "fields": [
+        { "label": "Cognome e Nome", "kind": "name" },
+        { "label": "Codice fiscale", "kind": "number" }
+      ]
+    },
+    {
+      "id": "es-pasaporte",
+      "category": "passport",
+      "displayName": "Pasaporte",
+      "issuingCountry": "ES",
+      "icon": null,
+      "regions": ["ES"],
+      "fields": [
+        { "label": "Nombre y Apellidos", "kind": "name" },
+        { "label": "N.º de pasaporte", "kind": "number" },
+        { "label": "Fecha de expedición", "kind": "issueDate" },
+        { "label": "Fecha de caducidad", "kind": "expiry" },
+        { "label": "Autoridad", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "es-dni",
+      "category": "nationalID",
+      "displayName": "Documento Nacional de Identidad",
+      "issuingCountry": "ES",
+      "icon": null,
+      "regions": ["ES"],
+      "pages": [
+        {
+          "label": "Anverso",
+          "fields": [
+            { "label": "Nombre y Apellidos", "kind": "name" },
+            { "label": "DNI", "kind": "number" },
+            { "label": "Validez", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Reverso",
+          "fields": [
+            { "label": "Equipo expedidor", "kind": "issuedBy" },
+            { "label": "Fecha de expedición", "kind": "issueDate" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "es-permiso-conducir",
+      "category": "driversLicense",
+      "displayName": "Permiso de conducción",
+      "issuingCountry": "ES",
+      "icon": null,
+      "regions": ["ES"],
+      "pages": [
+        {
+          "label": "Anverso",
+          "fields": [
+            { "label": "Nombre y Apellidos", "kind": "name" },
+            { "label": "Número", "kind": "number" },
+            { "label": "Expedición", "kind": "issueDate" },
+            { "label": "Validez", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Reverso",
+          "fields": [
+            { "label": "Categorías", "kind": "text" },
+            { "label": "Autoridad", "kind": "issuedBy" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "es-tie",
+      "category": "residencePermit",
+      "displayName": "Tarjeta de Identidad de Extranjero",
+      "issuingCountry": "ES",
+      "icon": null,
+      "regions": ["ES"],
+      "fields": [
+        { "label": "Nombre y Apellidos", "kind": "name" },
+        { "label": "NIE", "kind": "number" },
+        { "label": "Validez", "kind": "expiry" },
+        { "label": "Autoridad", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "nl-paspoort",
+      "category": "passport",
+      "displayName": "Paspoort",
+      "issuingCountry": "NL",
+      "icon": null,
+      "regions": ["NL"],
+      "fields": [
+        { "label": "Naam", "kind": "name" },
+        { "label": "Documentnummer", "kind": "number" },
+        { "label": "Datum van afgifte", "kind": "issueDate" },
+        { "label": "Geldig tot", "kind": "expiry" },
+        { "label": "Autoriteit", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "nl-id-kaart",
+      "category": "nationalID",
+      "displayName": "Identiteitskaart",
+      "issuingCountry": "NL",
+      "icon": null,
+      "regions": ["NL"],
+      "pages": [
+        {
+          "label": "Voorzijde",
+          "fields": [
+            { "label": "Naam", "kind": "name" },
+            { "label": "Documentnummer", "kind": "number" },
+            { "label": "Geldig tot", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Achterzijde",
+          "fields": [
+            { "label": "Autoriteit", "kind": "issuedBy" },
+            { "label": "Datum van afgifte", "kind": "issueDate" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nl-rijbewijs",
+      "category": "driversLicense",
+      "displayName": "Rijbewijs",
+      "issuingCountry": "NL",
+      "icon": null,
+      "regions": ["NL"],
+      "pages": [
+        {
+          "label": "Voorzijde",
+          "fields": [
+            { "label": "Naam", "kind": "name" },
+            { "label": "Rijbewijsnummer", "kind": "number" },
+            { "label": "Afgifte", "kind": "issueDate" },
+            { "label": "Geldig tot", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Achterzijde",
+          "fields": [
+            { "label": "Categorieën", "kind": "text" },
+            { "label": "Autoriteit", "kind": "issuedBy" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nl-bsn",
+      "category": "financial",
+      "displayName": "Burgerservicenummer",
+      "issuingCountry": "NL",
+      "icon": null,
+      "regions": ["NL"],
+      "fields": [
+        { "label": "Naam", "kind": "name" },
+        { "label": "BSN", "kind": "number" }
+      ]
+    },
+    {
+      "id": "ca-passport",
+      "category": "passport",
+      "displayName": "Canadian Passport",
+      "issuingCountry": "CA",
+      "icon": null,
+      "regions": ["CA"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Passport No.", "kind": "number" },
+        { "label": "Date of Issue", "kind": "issueDate" },
+        { "label": "Date of Expiry", "kind": "expiry" },
+        { "label": "Authority", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "ca-drivers-licence",
+      "category": "driversLicense",
+      "displayName": "Driver's Licence",
+      "issuingCountry": "CA",
+      "icon": null,
+      "regions": ["CA"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Licence No.", "kind": "number" },
+        { "label": "Date of Birth", "kind": "text" },
+        { "label": "Expiry", "kind": "expiry" },
+        { "label": "Issuing Province", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "ca-pr-card",
+      "category": "residencePermit",
+      "displayName": "Permanent Resident Card",
+      "issuingCountry": "CA",
+      "icon": null,
+      "regions": ["CA"],
+      "pages": [
+        {
+          "label": "Front",
+          "fields": [
+            { "label": "Name", "kind": "name" },
+            { "label": "PR Card No.", "kind": "number" },
+            { "label": "Expiry", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Back",
+          "fields": [
+            { "label": "Date of Issue", "kind": "issueDate" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ca-health-card",
+      "category": "healthInsurance",
+      "displayName": "Health Card",
+      "issuingCountry": "CA",
+      "icon": null,
+      "regions": ["CA"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Health Number", "kind": "number" },
+        { "label": "Expiry", "kind": "expiry" }
+      ]
+    },
+    {
+      "id": "ca-sin",
+      "category": "financial",
+      "displayName": "Social Insurance Number",
+      "issuingCountry": "CA",
+      "icon": null,
+      "regions": ["CA"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "SIN", "kind": "number" }
+      ]
+    },
+    {
+      "id": "au-passport",
+      "category": "passport",
+      "displayName": "Australian Passport",
+      "issuingCountry": "AU",
+      "icon": null,
+      "regions": ["AU"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Passport No.", "kind": "number" },
+        { "label": "Date of Issue", "kind": "issueDate" },
+        { "label": "Date of Expiry", "kind": "expiry" },
+        { "label": "Authority", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "au-drivers-licence",
+      "category": "driversLicense",
+      "displayName": "Driver Licence",
+      "issuingCountry": "AU",
+      "icon": null,
+      "regions": ["AU"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Licence No.", "kind": "number" },
+        { "label": "Date of Birth", "kind": "text" },
+        { "label": "Expiry", "kind": "expiry" },
+        { "label": "Issuing State", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "au-medicare",
+      "category": "healthInsurance",
+      "displayName": "Medicare Card",
+      "issuingCountry": "AU",
+      "icon": null,
+      "regions": ["AU"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Medicare Number", "kind": "number" },
+        { "label": "Valid To", "kind": "expiry" }
+      ]
+    },
+    {
+      "id": "jp-passport",
+      "category": "passport",
+      "displayName": "パスポート",
+      "issuingCountry": "JP",
+      "icon": null,
+      "regions": ["JP"],
+      "fields": [
+        { "label": "氏名", "kind": "name" },
+        { "label": "旅券番号", "kind": "number" },
+        { "label": "発行年月日", "kind": "issueDate" },
+        { "label": "有効期間満了日", "kind": "expiry" },
+        { "label": "発行官庁", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "jp-my-number",
+      "category": "nationalID",
+      "displayName": "マイナンバーカード",
+      "issuingCountry": "JP",
+      "icon": null,
+      "regions": ["JP"],
+      "pages": [
+        {
+          "label": "表面",
+          "fields": [
+            { "label": "氏名", "kind": "name" },
+            { "label": "有効期限", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "裏面",
+          "fields": [
+            { "label": "個人番号", "kind": "number" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jp-drivers-license",
+      "category": "driversLicense",
+      "displayName": "運転免許証",
+      "issuingCountry": "JP",
+      "icon": null,
+      "regions": ["JP"],
+      "fields": [
+        { "label": "氏名", "kind": "name" },
+        { "label": "免許番号", "kind": "number" },
+        { "label": "交付", "kind": "issueDate" },
+        { "label": "有効期限", "kind": "expiry" },
+        { "label": "公安委員会", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "jp-residence-card",
+      "category": "residencePermit",
+      "displayName": "在留カード",
+      "issuingCountry": "JP",
+      "icon": null,
+      "regions": ["JP"],
+      "pages": [
+        {
+          "label": "表面",
+          "fields": [
+            { "label": "氏名", "kind": "name" },
+            { "label": "在留カード番号", "kind": "number" },
+            { "label": "在留期間満了日", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "裏面",
+          "fields": [
+            { "label": "在留資格", "kind": "text" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jp-health-insurance",
+      "category": "healthInsurance",
+      "displayName": "健康保険証",
+      "issuingCountry": "JP",
+      "icon": null,
+      "regions": ["JP"],
+      "fields": [
+        { "label": "氏名", "kind": "name" },
+        { "label": "記号・番号", "kind": "number" },
+        { "label": "保険者", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "kr-passport",
+      "category": "passport",
+      "displayName": "여권",
+      "issuingCountry": "KR",
+      "icon": null,
+      "regions": ["KR"],
+      "fields": [
+        { "label": "성명", "kind": "name" },
+        { "label": "여권번호", "kind": "number" },
+        { "label": "발급일", "kind": "issueDate" },
+        { "label": "기간만료일", "kind": "expiry" },
+        { "label": "발급관청", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "kr-resident-registration",
+      "category": "nationalID",
+      "displayName": "주민등록증",
+      "issuingCountry": "KR",
+      "icon": null,
+      "regions": ["KR"],
+      "fields": [
+        { "label": "성명", "kind": "name" },
+        { "label": "주민등록번호", "kind": "number" },
+        { "label": "발급일", "kind": "issueDate" },
+        { "label": "발급기관", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "kr-drivers-license",
+      "category": "driversLicense",
+      "displayName": "운전면허증",
+      "issuingCountry": "KR",
+      "icon": null,
+      "regions": ["KR"],
+      "fields": [
+        { "label": "성명", "kind": "name" },
+        { "label": "면허번호", "kind": "number" },
+        { "label": "발급일", "kind": "issueDate" },
+        { "label": "적성검사기간", "kind": "expiry" },
+        { "label": "발급기관", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "kr-alien-registration",
+      "category": "residencePermit",
+      "displayName": "외국인등록증",
+      "issuingCountry": "KR",
+      "icon": null,
+      "regions": ["KR"],
+      "pages": [
+        {
+          "label": "앞면",
+          "fields": [
+            { "label": "성명", "kind": "name" },
+            { "label": "외국인등록번호", "kind": "number" },
+            { "label": "체류기간", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "뒷면",
+          "fields": [
+            { "label": "체류자격", "kind": "text" },
+            { "label": "발급기관", "kind": "issuedBy" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-passport",
+      "category": "passport",
+      "displayName": "Passport",
+      "issuingCountry": "IN",
+      "icon": null,
+      "regions": ["IN"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Passport No.", "kind": "number" },
+        { "label": "Date of Issue", "kind": "issueDate" },
+        { "label": "Date of Expiry", "kind": "expiry" },
+        { "label": "Place of Issue", "kind": "issuedLocation" }
+      ]
+    },
+    {
+      "id": "in-aadhaar",
+      "category": "nationalID",
+      "displayName": "Aadhaar",
+      "issuingCountry": "IN",
+      "icon": null,
+      "regions": ["IN"],
+      "pages": [
+        {
+          "label": "Front",
+          "fields": [
+            { "label": "Name", "kind": "name" },
+            { "label": "Aadhaar Number", "kind": "number" },
+            { "label": "Date of Birth", "kind": "text" }
+          ]
+        },
+        {
+          "label": "Back",
+          "fields": [
+            { "label": "Address", "kind": "issuedLocation" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-pan",
+      "category": "financial",
+      "displayName": "PAN Card",
+      "issuingCountry": "IN",
+      "icon": null,
+      "regions": ["IN"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Permanent Account Number", "kind": "number" },
+        { "label": "Date of Birth", "kind": "text" }
+      ]
+    },
+    {
+      "id": "in-driving-licence",
+      "category": "driversLicense",
+      "displayName": "Driving Licence",
+      "issuingCountry": "IN",
+      "icon": null,
+      "regions": ["IN"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "DL No.", "kind": "number" },
+        { "label": "Date of Issue", "kind": "issueDate" },
+        { "label": "Valid Till", "kind": "expiry" },
+        { "label": "Issuing Authority", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "in-voter-id",
+      "category": "nationalID",
+      "displayName": "Voter ID (EPIC)",
+      "issuingCountry": "IN",
+      "icon": null,
+      "regions": ["IN"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "EPIC No.", "kind": "number" }
+      ]
+    },
+    {
+      "id": "sg-passport",
+      "category": "passport",
+      "displayName": "Singapore Passport",
+      "issuingCountry": "SG",
+      "icon": null,
+      "regions": ["SG"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Passport No.", "kind": "number" },
+        { "label": "Date of Issue", "kind": "issueDate" },
+        { "label": "Date of Expiry", "kind": "expiry" },
+        { "label": "Authority", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "sg-nric",
+      "category": "nationalID",
+      "displayName": "NRIC",
+      "issuingCountry": "SG",
+      "icon": null,
+      "regions": ["SG"],
+      "pages": [
+        {
+          "label": "Front",
+          "fields": [
+            { "label": "Name", "kind": "name" },
+            { "label": "NRIC No.", "kind": "number" },
+            { "label": "Date of Birth", "kind": "text" }
+          ]
+        },
+        {
+          "label": "Back",
+          "fields": [
+            { "label": "Date of Issue", "kind": "issueDate" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sg-driving-licence",
+      "category": "driversLicense",
+      "displayName": "Driving Licence",
+      "issuingCountry": "SG",
+      "icon": null,
+      "regions": ["SG"],
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Licence No.", "kind": "number" },
+        { "label": "Date of Issue", "kind": "issueDate" },
+        { "label": "Valid Till", "kind": "expiry" }
+      ]
+    },
+    {
+      "id": "br-passaporte",
+      "category": "passport",
+      "displayName": "Passaporte",
+      "issuingCountry": "BR",
+      "icon": null,
+      "regions": ["BR"],
+      "fields": [
+        { "label": "Nome", "kind": "name" },
+        { "label": "Número do passaporte", "kind": "number" },
+        { "label": "Data de emissão", "kind": "issueDate" },
+        { "label": "Data de validade", "kind": "expiry" },
+        { "label": "Autoridade", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "br-rg",
+      "category": "nationalID",
+      "displayName": "Carteira de Identidade (RG)",
+      "issuingCountry": "BR",
+      "icon": null,
+      "regions": ["BR"],
+      "pages": [
+        {
+          "label": "Frente",
+          "fields": [
+            { "label": "Nome", "kind": "name" },
+            { "label": "Registro Geral", "kind": "number" },
+            { "label": "Data de expedição", "kind": "issueDate" }
+          ]
+        },
+        {
+          "label": "Verso",
+          "fields": [
+            { "label": "Órgão expedidor", "kind": "issuedBy" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "br-cpf",
+      "category": "financial",
+      "displayName": "CPF",
+      "issuingCountry": "BR",
+      "icon": null,
+      "regions": ["BR"],
+      "fields": [
+        { "label": "Nome", "kind": "name" },
+        { "label": "CPF", "kind": "number" }
+      ]
+    },
+    {
+      "id": "br-cnh",
+      "category": "driversLicense",
+      "displayName": "Carteira Nacional de Habilitação",
+      "issuingCountry": "BR",
+      "icon": null,
+      "regions": ["BR"],
+      "fields": [
+        { "label": "Nome", "kind": "name" },
+        { "label": "Nº de registro", "kind": "number" },
+        { "label": "Data de emissão", "kind": "issueDate" },
+        { "label": "Validade", "kind": "expiry" },
+        { "label": "Categoria", "kind": "text" }
+      ]
+    },
+    {
+      "id": "mx-pasaporte",
+      "category": "passport",
+      "displayName": "Pasaporte",
+      "issuingCountry": "MX",
+      "icon": null,
+      "regions": ["MX"],
+      "fields": [
+        { "label": "Nombre", "kind": "name" },
+        { "label": "Número de pasaporte", "kind": "number" },
+        { "label": "Fecha de expedición", "kind": "issueDate" },
+        { "label": "Fecha de vencimiento", "kind": "expiry" },
+        { "label": "Autoridad", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "mx-ine",
+      "category": "nationalID",
+      "displayName": "Credencial para Votar (INE)",
+      "issuingCountry": "MX",
+      "icon": null,
+      "regions": ["MX"],
+      "pages": [
+        {
+          "label": "Frente",
+          "fields": [
+            { "label": "Nombre", "kind": "name" },
+            { "label": "Clave de elector", "kind": "number" },
+            { "label": "Vigencia", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Reverso",
+          "fields": [
+            { "label": "CURP", "kind": "text" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mx-licencia",
+      "category": "driversLicense",
+      "displayName": "Licencia de Conducir",
+      "issuingCountry": "MX",
+      "icon": null,
+      "regions": ["MX"],
+      "fields": [
+        { "label": "Nombre", "kind": "name" },
+        { "label": "Número", "kind": "number" },
+        { "label": "Expedición", "kind": "issueDate" },
+        { "label": "Vigencia", "kind": "expiry" },
+        { "label": "Tipo", "kind": "text" }
+      ]
+    },
+    {
+      "id": "mx-curp",
+      "category": "civilRecord",
+      "displayName": "CURP",
+      "issuingCountry": "MX",
+      "icon": null,
+      "regions": ["MX"],
+      "fields": [
+        { "label": "Nombre", "kind": "name" },
+        { "label": "CURP", "kind": "number" }
+      ]
+    },
+    {
+      "id": "ru-passport-internal",
+      "category": "nationalID",
+      "displayName": "Паспорт гражданина РФ",
+      "issuingCountry": "RU",
+      "icon": null,
+      "regions": ["RU"],
+      "fields": [
+        { "label": "ФИО", "kind": "name" },
+        { "label": "Серия и номер", "kind": "number" },
+        { "label": "Дата выдачи", "kind": "issueDate" },
+        { "label": "Кем выдан", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "ru-zagranpasport",
+      "category": "passport",
+      "displayName": "Заграничный паспорт",
+      "issuingCountry": "RU",
+      "icon": null,
+      "regions": ["RU"],
+      "fields": [
+        { "label": "ФИО", "kind": "name" },
+        { "label": "Номер паспорта", "kind": "number" },
+        { "label": "Дата выдачи", "kind": "issueDate" },
+        { "label": "Дата окончания срока", "kind": "expiry" },
+        { "label": "Орган, выдавший документ", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "ru-drivers-license",
+      "category": "driversLicense",
+      "displayName": "Водительское удостоверение",
+      "issuingCountry": "RU",
+      "icon": null,
+      "regions": ["RU"],
+      "pages": [
+        {
+          "label": "Лицевая сторона",
+          "fields": [
+            { "label": "ФИО", "kind": "name" },
+            { "label": "Номер", "kind": "number" },
+            { "label": "Дата выдачи", "kind": "issueDate" },
+            { "label": "Действительно до", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Оборотная сторона",
+          "fields": [
+            { "label": "Категории", "kind": "text" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ru-snils",
+      "category": "financial",
+      "displayName": "СНИЛС",
+      "issuingCountry": "RU",
+      "icon": null,
+      "regions": ["RU"],
+      "fields": [
+        { "label": "ФИО", "kind": "name" },
+        { "label": "Страховой номер", "kind": "number" }
+      ]
+    },
+    {
+      "id": "ww-national-id",
+      "category": "nationalID",
+      "displayName": "National ID Card",
+      "issuingCountry": null,
+      "icon": null,
+      "regions": null,
+      "pages": [
+        {
+          "label": "Front",
+          "fields": [
+            { "label": "Full Name", "kind": "name" },
+            { "label": "ID Number", "kind": "number" },
+            { "label": "Date of Expiry", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Back",
+          "fields": [
+            { "label": "Issuing Authority", "kind": "issuedBy" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ww-tax-id",
+      "category": "financial",
+      "displayName": "Tax ID Card",
+      "issuingCountry": null,
+      "icon": null,
+      "regions": null,
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Tax ID Number", "kind": "number" }
+      ]
+    },
+    {
+      "id": "ww-health-insurance",
+      "category": "healthInsurance",
+      "displayName": "Health Insurance Card",
+      "issuingCountry": null,
+      "icon": null,
+      "regions": null,
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Insurance Number", "kind": "number" },
+        { "label": "Insurer", "kind": "issuedBy" },
+        { "label": "Valid Until", "kind": "expiry" }
+      ]
+    },
+    {
+      "id": "ww-student-id",
+      "category": "studentID",
+      "displayName": "Student ID Card",
+      "issuingCountry": null,
+      "icon": null,
+      "regions": null,
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Student Number", "kind": "number" },
+        { "label": "School", "kind": "issuedBy" },
+        { "label": "Valid Until", "kind": "expiry" }
+      ]
+    },
+    {
+      "id": "ww-employee-id",
+      "category": "workID",
+      "displayName": "Employee ID Card",
+      "issuingCountry": null,
+      "icon": null,
+      "regions": null,
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "Employee Number", "kind": "number" },
+        { "label": "Company", "kind": "issuedBy" }
+      ]
+    },
+    {
+      "id": "ww-military-id",
+      "category": "militaryID",
+      "displayName": "Military ID Card",
+      "issuingCountry": null,
+      "icon": null,
+      "regions": null,
+      "fields": [
+        { "label": "Name", "kind": "name" },
+        { "label": "ID Number", "kind": "number" },
+        { "label": "Rank", "kind": "text" },
+        { "label": "Expiration", "kind": "expiry" }
       ]
     }
   ]
