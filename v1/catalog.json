@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "templates": [
     {
       "id": "cn-national-id",
@@ -8,11 +8,21 @@
       "issuingCountry": "CN",
       "icon": null,
       "regions": ["CN"],
-      "fields": [
-        { "label": "姓名", "kind": "name" },
-        { "label": "公民身份号码", "kind": "number" },
-        { "label": "签发机关", "kind": "issuedBy" },
-        { "label": "有效期限", "kind": "expiry" }
+      "pages": [
+        {
+          "label": "人像面",
+          "fields": [
+            { "label": "姓名", "kind": "name" },
+            { "label": "公民身份号码", "kind": "number" }
+          ]
+        },
+        {
+          "label": "国徽面",
+          "fields": [
+            { "label": "签发机关", "kind": "issuedBy" },
+            { "label": "有效期限", "kind": "expiry" }
+          ]
+        }
       ]
     },
     {
@@ -22,11 +32,21 @@
       "issuingCountry": "CN",
       "icon": null,
       "regions": ["CN"],
-      "fields": [
-        { "label": "姓名", "kind": "name" },
-        { "label": "公民身份号码", "kind": "number" },
-        { "label": "签发机关", "kind": "issuedBy" },
-        { "label": "有效期限", "kind": "expiry" }
+      "pages": [
+        {
+          "label": "人像面",
+          "fields": [
+            { "label": "姓名", "kind": "name" },
+            { "label": "公民身份号码", "kind": "number" }
+          ]
+        },
+        {
+          "label": "国徽面",
+          "fields": [
+            { "label": "签发机关", "kind": "issuedBy" },
+            { "label": "有效期限", "kind": "expiry" }
+          ]
+        }
       ]
     },
     {
@@ -111,13 +131,23 @@
       "issuingCountry": "CN",
       "icon": null,
       "regions": ["CN"],
-      "fields": [
-        { "label": "姓名", "kind": "name" },
-        { "label": "证号", "kind": "number" },
-        { "label": "初次领证日期", "kind": "issueDate" },
-        { "label": "有效期限", "kind": "expiry" },
-        { "label": "准驾车型", "kind": "text" },
-        { "label": "发证机关", "kind": "issuedBy" }
+      "pages": [
+        {
+          "label": "正页",
+          "fields": [
+            { "label": "姓名", "kind": "name" },
+            { "label": "证号", "kind": "number" },
+            { "label": "准驾车型", "kind": "text" },
+            { "label": "初次领证日期", "kind": "issueDate" },
+            { "label": "有效期限", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "副页",
+          "fields": [
+            { "label": "发证机关", "kind": "issuedBy" }
+          ]
+        }
       ]
     },
     {
@@ -127,13 +157,23 @@
       "issuingCountry": "CN",
       "icon": null,
       "regions": ["CN"],
-      "fields": [
-        { "label": "所有人", "kind": "name" },
-        { "label": "号牌号码", "kind": "number" },
-        { "label": "车辆识别代号", "kind": "text" },
-        { "label": "注册日期", "kind": "issueDate" },
-        { "label": "检验有效期至", "kind": "expiry" },
-        { "label": "发证机关", "kind": "issuedBy" }
+      "pages": [
+        {
+          "label": "正页",
+          "fields": [
+            { "label": "所有人", "kind": "name" },
+            { "label": "号牌号码", "kind": "number" },
+            { "label": "车辆识别代号", "kind": "text" },
+            { "label": "注册日期", "kind": "issueDate" },
+            { "label": "发证机关", "kind": "issuedBy" }
+          ]
+        },
+        {
+          "label": "副页",
+          "fields": [
+            { "label": "检验有效期至", "kind": "expiry" }
+          ]
+        }
       ]
     },
     {
@@ -158,12 +198,22 @@
       "issuingCountry": "CN",
       "icon": null,
       "regions": ["CN"],
-      "fields": [
-        { "label": "姓名", "kind": "name" },
-        { "label": "证件号码", "kind": "number" },
-        { "label": "签发日期", "kind": "issueDate" },
-        { "label": "有效期至", "kind": "expiry" },
-        { "label": "签发机关", "kind": "issuedBy" }
+      "pages": [
+        {
+          "label": "正面",
+          "fields": [
+            { "label": "姓名", "kind": "name" },
+            { "label": "证件号码", "kind": "number" }
+          ]
+        },
+        {
+          "label": "背面",
+          "fields": [
+            { "label": "签发日期", "kind": "issueDate" },
+            { "label": "有效期至", "kind": "expiry" },
+            { "label": "签发机关", "kind": "issuedBy" }
+          ]
+        }
       ]
     },
     {
@@ -173,12 +223,22 @@
       "issuingCountry": "CN",
       "icon": null,
       "regions": ["CN"],
-      "fields": [
-        { "label": "姓名", "kind": "name" },
-        { "label": "公民身份号码", "kind": "number" },
-        { "label": "签发日期", "kind": "issueDate" },
-        { "label": "有效期限", "kind": "expiry" },
-        { "label": "签发机关", "kind": "issuedBy" }
+      "pages": [
+        {
+          "label": "正面",
+          "fields": [
+            { "label": "姓名", "kind": "name" },
+            { "label": "公民身份号码", "kind": "number" }
+          ]
+        },
+        {
+          "label": "背面",
+          "fields": [
+            { "label": "签发日期", "kind": "issueDate" },
+            { "label": "有效期限", "kind": "expiry" },
+            { "label": "签发机关", "kind": "issuedBy" }
+          ]
+        }
       ]
     },
     {
@@ -188,10 +248,20 @@
       "issuingCountry": "CN",
       "icon": null,
       "regions": ["CN"],
-      "fields": [
-        { "label": "姓名", "kind": "name" },
-        { "label": "社会保障号码", "kind": "number" },
-        { "label": "发卡日期", "kind": "issueDate" }
+      "pages": [
+        {
+          "label": "正面",
+          "fields": [
+            { "label": "姓名", "kind": "name" },
+            { "label": "社会保障号码", "kind": "number" }
+          ]
+        },
+        {
+          "label": "背面",
+          "fields": [
+            { "label": "发卡日期", "kind": "issueDate" }
+          ]
+        }
       ]
     },
     {
@@ -317,11 +387,21 @@
       "issuingCountry": "CN",
       "icon": null,
       "regions": ["CN"],
-      "fields": [
-        { "label": "持卡人", "kind": "name" },
-        { "label": "卡号", "kind": "number" },
-        { "label": "有效期至", "kind": "expiry" },
-        { "label": "发卡银行", "kind": "issuedBy" }
+      "pages": [
+        {
+          "label": "正面",
+          "fields": [
+            { "label": "持卡人", "kind": "name" },
+            { "label": "卡号", "kind": "number" },
+            { "label": "有效期至", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "背面",
+          "fields": [
+            { "label": "发卡银行", "kind": "issuedBy" }
+          ]
+        }
       ]
     },
     {
@@ -331,10 +411,20 @@
       "issuingCountry": "HK",
       "icon": null,
       "regions": ["HK"],
-      "fields": [
-        { "label": "姓名", "kind": "name" },
-        { "label": "身份證號碼", "kind": "number" },
-        { "label": "簽發日期", "kind": "issueDate" }
+      "pages": [
+        {
+          "label": "正面",
+          "fields": [
+            { "label": "姓名", "kind": "name" },
+            { "label": "身份證號碼", "kind": "number" }
+          ]
+        },
+        {
+          "label": "背面",
+          "fields": [
+            { "label": "簽發日期", "kind": "issueDate" }
+          ]
+        }
       ]
     },
     {
@@ -344,10 +434,20 @@
       "issuingCountry": "TW",
       "icon": null,
       "regions": ["TW"],
-      "fields": [
-        { "label": "姓名", "kind": "name" },
-        { "label": "統一編號", "kind": "number" },
-        { "label": "發證日期", "kind": "issueDate" }
+      "pages": [
+        {
+          "label": "正面",
+          "fields": [
+            { "label": "姓名", "kind": "name" },
+            { "label": "統一編號", "kind": "number" }
+          ]
+        },
+        {
+          "label": "背面",
+          "fields": [
+            { "label": "發證日期", "kind": "issueDate" }
+          ]
+        }
       ]
     },
     {
@@ -388,13 +488,23 @@
       "issuingCountry": null,
       "icon": null,
       "regions": null,
-      "fields": [
-        { "label": "Full Name", "kind": "name" },
-        { "label": "License No.", "kind": "number" },
-        { "label": "Issue Date", "kind": "issueDate" },
-        { "label": "Expiry Date", "kind": "expiry" },
-        { "label": "Class", "kind": "text" },
-        { "label": "Issuing Authority", "kind": "issuedBy" }
+      "pages": [
+        {
+          "label": "Front",
+          "fields": [
+            { "label": "Full Name", "kind": "name" },
+            { "label": "License No.", "kind": "number" },
+            { "label": "Issue Date", "kind": "issueDate" },
+            { "label": "Expiry Date", "kind": "expiry" }
+          ]
+        },
+        {
+          "label": "Back",
+          "fields": [
+            { "label": "Class", "kind": "text" },
+            { "label": "Issuing Authority", "kind": "issuedBy" }
+          ]
+        }
       ]
     },
     {
